@@ -2,6 +2,15 @@ plugins {
     id 'xyz.jpenilla.run-paper' version '3.0.2'
 }
 
+// Paper 26.3 is a Java 25 runtime; keep the Bukkit compatibility module's
+// Java 21 output separate while compiling this Paper adapter with Java 25.
+java {
+    toolchain {
+        languageVersion = org.gradle.jvm.toolchain.JavaLanguageVersion.of(25)
+    }
+}
+compileJava.options.release.set 25
+
 dependencies {
     implementation project(':bukkit')
     compileOnly project(':common')
