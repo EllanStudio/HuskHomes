@@ -216,7 +216,7 @@ public class BukkitHuskHomes extends JavaPlugin implements HuskHomes, BukkitTask
         return String.format("%s/%s", getServer().getName(), getServer().getVersion());
     }
 
-    // Match the numeric version prefix; Paper reports versions like "26.2.build.62-beta" since 26.1
+    // Match the numeric version prefix; Paper reports versions like "26.3.build.157-beta" since 26.1
     private static final Pattern NUMERIC_VERSION = Pattern.compile("^\\d+(\\.\\d+)+");
 
     @Override

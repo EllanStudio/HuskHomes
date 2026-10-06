@@ -6,7 +6,7 @@ dependencies {
     implementation project(':bukkit')
     compileOnly project(':common')
 
-    compileOnly 'io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT'
+    compileOnly 'io.papermc.paper:paper-api:26.3.build.157-beta'
     compileOnly 'org.bstats:bstats-bukkit:3.2.1'
     compileOnly 'org.jetbrains:annotations:26.1.0'
     compileOnly 'net.william278:desertwell:2.0.7'
@@ -59,7 +59,7 @@ shadowJar {
 
 tasks {
     runServer {
-        minecraftVersion('26.2')
+        minecraftVersion('26.3')
 
         downloadPlugins {
             url("https://download.luckperms.net/1571/bukkit/loader/LuckPerms-Bukkit-5.4.154.jar")
